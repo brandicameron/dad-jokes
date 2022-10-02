@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 320px;
+  background-image: url('../../assets/btn-color.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+
+.logo-text {
+  width: 100%;
+}
+
+.logo > img {
+  display: block;
+  position: absolute;
+}
+
+.dad1 {
+  top: 3%;
+  left: 15%;
+}
+
+.dad2 {
+  top: 3%;
+  left: 45%;
+}
+
+.dad3 {
+  top: 60%;
+}
+
+.historyBtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 1rem;
+  right: 1rem;
+  transition: transform ease-in-out 200ms;
+}
+
+.historyBtn:hover {
+  transform: rotate(-25deg);
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    transform: scale(0.75);
+    margin-top: -20px;
+  }
+}

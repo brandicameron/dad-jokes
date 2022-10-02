@@ -28,6 +28,10 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: -webkit-fill-available;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -46,6 +50,7 @@ select {
 }
 
 button {
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
