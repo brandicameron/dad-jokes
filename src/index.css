@@ -3,7 +3,7 @@
 :root {
   --textColor: #000;
   --accentColor: #754799;
-  --borderRadius: 10px;
+  --borderRadius: 50px;
   --radialGradient: radial-gradient(
     206.18% 206.18% at 84.95% 7.59%,
     #00e1ff 0%,

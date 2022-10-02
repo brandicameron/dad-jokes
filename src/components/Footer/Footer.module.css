@@ -13,7 +13,7 @@
   border-radius: 50%;
   width: 140px;
   height: 140px;
-  transition: transform ease-in-out 200ms;
+  transition: transform 200ms ease-in-out;
 }
 
 .moreBtnPress {

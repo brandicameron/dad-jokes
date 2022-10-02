@@ -5,7 +5,7 @@ import Dad2 from '../../assets/dad-2.png';
 import Dad3 from '../../assets/dad-3.png';
 import HistoryIcon from '../../assets/history.svg';
 
-export default function Header() {
+export default function Header({ handleShowHistory }) {
   return (
     <header className={styles.header}>
       <a href='/' className={styles.logo}>
@@ -14,7 +14,11 @@ export default function Header() {
         <img className={styles.logoText} src={LogoText} alt='Dad Jokes' />
         <img className={styles.dad3} src={Dad3} alt='Dad Jokes' />
       </a>
-      <button className={styles.historyBtn} aria-label='Click to View Joke History'>
+      <button
+        onClick={handleShowHistory}
+        className={styles.historyBtn}
+        aria-label='Click to View Joke History'
+      >
         <img src={HistoryIcon} alt='' />
       </button>
     </header>
