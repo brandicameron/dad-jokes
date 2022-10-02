@@ -61,4 +61,8 @@
   .footer {
     padding: 1rem 0;
   }
+
+  .moreBtn:hover {
+    transform: none;
+  }
 }
