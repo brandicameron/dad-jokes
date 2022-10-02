@@ -1,9 +1,9 @@
 import styles from './Joke.module.css';
 
-export default function Joke() {
+export default function Joke({ joke }) {
   return (
     <main className={styles.jokeContainer}>
-      <h1>Sample joke here.</h1>
+      <h1>{joke}</h1>
     </main>
   );
 }
