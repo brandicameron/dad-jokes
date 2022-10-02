@@ -8,6 +8,6 @@
 .jokeContainer h1 {
   line-height: 1.35;
   font-size: 1.75rem;
-  width: fit-content;
-  max-width: 60ch;
+  width: 80vw;
+  max-width: 625px;
 }
