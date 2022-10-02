@@ -5,9 +5,9 @@ import MoreBtnText from '../../assets/more.svg';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <button className={styles.moreBtn}>
+      <button aria-label='Get another joke.' className={styles.moreBtn}>
         <img className={styles.moreBtnPress} src={moreBtnPress} alt='' />
-        <img className={styles.moreBtnText} src={MoreBtnText} alt='Get another joke.' />
+        <img className={styles.moreBtnText} src={MoreBtnText} alt='' />
       </button>
     </footer>
   );
