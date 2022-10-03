@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 .logo {
@@ -15,7 +16,6 @@
   background-repeat: no-repeat;
   background-position: 45% 70%;
   background-size: 85%;
-  margin-top: 1rem;
 }
 
 .logoText {
@@ -47,7 +47,7 @@
 .dad1,
 .dad2,
 .dad3 {
-  animation: rotate 600ms ease-in-out 2;
+  animation: rotate 400ms ease-in-out 2;
 }
 
 .dad1,
@@ -79,13 +79,7 @@
   0% {
     transform: rotate(0);
   }
-  25% {
-    transform: rotate(5deg);
-  }
   50% {
-    transform: rotate(0);
-  }
-  75% {
     transform: rotate(5deg);
   }
   100% {
@@ -107,10 +101,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .logo {
-    margin-top: 2rem;
-  }
-
   .dad3 {
     position: absolute;
     width: 80%;
