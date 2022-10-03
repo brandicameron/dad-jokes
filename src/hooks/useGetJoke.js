@@ -30,5 +30,5 @@ export function useGetJoke() {
     localStorage.setItem('jokeHistory', JSON.stringify(jokeHistory));
   }, [jokeHistory]);
 
-  return { joke, jokeHistory };
+  return { joke, jokeHistory, getJoke };
 }
