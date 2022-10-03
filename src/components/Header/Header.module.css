@@ -14,7 +14,7 @@
   background-image: url('../../assets/btn-color.svg');
   background-repeat: no-repeat;
   background-position: 45% 70%;
-  background-size: 25vh;
+  background-size: 85%;
   margin-top: 1rem;
 }
 
@@ -22,6 +22,32 @@
   width: 100%;
   object-fit: contain;
   filter: drop-shadow(3px 3px 5px rgba(0 0 0 / 30%));
+  animation: squeeze 1200ms ease-in;
+}
+
+@keyframes squeeze {
+  0% {
+    transform: scale(1, 1);
+  }
+  15% {
+    transform: scale(1.1, 0.9);
+  }
+  30% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.dad1,
+.dad2,
+.dad3 {
+  animation: rotate 600ms ease-in-out 2;
 }
 
 .dad1,
@@ -38,13 +64,33 @@
 
 .dad2 {
   left: 45%;
+  animation-delay: 200ms;
 }
 
 .dad3 {
   position: absolute;
-  width: 90%;
+  width: 80%;
   object-fit: contain;
   bottom: 0;
+  animation-delay: 100ms;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .historyBtn {
@@ -63,5 +109,12 @@
 @media screen and (max-width: 600px) {
   .logo {
     margin-top: 2rem;
+  }
+
+  .dad3 {
+    position: absolute;
+    width: 80%;
+    object-fit: contain;
+    bottom: -5%;
   }
 }
