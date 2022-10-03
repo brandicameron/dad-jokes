@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/dad-jokes/static/css/main.073c9b0a.css",
-    "main.js": "/dad-jokes/static/js/main.3ae0abc0.js",
+    "main.css": "/dad-jokes/static/css/main.e2e3b357.css",
+    "main.js": "/dad-jokes/static/js/main.84567156.js",
     "static/js/787.b0a5a3f9.chunk.js": "/dad-jokes/static/js/787.b0a5a3f9.chunk.js",
-    "static/media/logo.svg": "/dad-jokes/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/dad-jokes-text.svg": "/dad-jokes/static/media/dad-jokes-text.922ddc66e646d47310cdc162b2d04a5d.svg",
+    "static/media/more.svg": "/dad-jokes/static/media/more.360f8800f194b1280e8cdb1ef74d8d72.svg",
+    "static/media/btn-press.svg": "/dad-jokes/static/media/btn-press.fbdaa309926cd6163f35b736814ce54e.svg",
+    "static/media/history.svg": "/dad-jokes/static/media/history.304b056ad35b0be0953d9eed5e83a7ee.svg",
+    "static/media/btn-color.svg": "/dad-jokes/static/media/btn-color.8f57101c5f797357a582.svg",
     "index.html": "/dad-jokes/index.html",
-    "main.073c9b0a.css.map": "/dad-jokes/static/css/main.073c9b0a.css.map",
-    "main.3ae0abc0.js.map": "/dad-jokes/static/js/main.3ae0abc0.js.map",
+    "main.e2e3b357.css.map": "/dad-jokes/static/css/main.e2e3b357.css.map",
+    "main.84567156.js.map": "/dad-jokes/static/js/main.84567156.js.map",
     "787.b0a5a3f9.chunk.js.map": "/dad-jokes/static/js/787.b0a5a3f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3ae0abc0.js"
+    "static/css/main.e2e3b357.css",
+    "static/js/main.84567156.js"
   ]
 }
