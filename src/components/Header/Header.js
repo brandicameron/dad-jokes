@@ -8,11 +8,11 @@ import HistoryIcon from '../../assets/history.svg';
 export default function Header({ handleShowHistory }) {
   return (
     <header className={styles.header}>
-      <a href='/' className={styles.logo}>
-        <img className={styles.dad1} src={Dad1} alt='Dad Jokes' />
-        <img className={styles.dad2} src={Dad2} alt='Dad Jokes' />
-        <img className={styles.logoText} src={LogoText} alt='Dad Jokes' />
-        <img className={styles.dad3} src={Dad3} alt='Dad Jokes' />
+      <a href='/' className={styles.logo} aria-label='Go back home.'>
+        <img className={styles.dad1} src={Dad1} width={90} height={196} alt='' />
+        <img className={styles.dad2} src={Dad2} width={86} height={233} alt='' />
+        <img className={styles.logoText} src={LogoText} width={300} height={165} alt='' />
+        <img className={styles.dad3} src={Dad3} width={203} height={121} alt='' />
       </a>
       <button
         onClick={handleShowHistory}

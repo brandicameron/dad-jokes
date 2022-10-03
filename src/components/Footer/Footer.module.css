@@ -17,6 +17,7 @@
 }
 
 .moreBtnPress {
+  width: 85%;
   filter: drop-shadow(-5px 5px 5px rgba(0 0 0 / 50%));
   overflow: visible;
 }
@@ -64,5 +65,16 @@
 
   .moreBtn:hover {
     transform: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .moreBtn {
+    width: 115px;
+    height: 115px;
+  }
+
+  .moreBtnText {
+    transform: scale(0.8);
   }
 }

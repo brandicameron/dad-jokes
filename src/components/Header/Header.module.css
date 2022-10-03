@@ -8,35 +8,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 320px;
+  width: 30vh;
+  height: auto;
+  aspect-ratio: 1/1;
   background-image: url('../../assets/btn-color.svg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90%;
+  background-position: 45% 70%;
+  background-size: 25vh;
+  margin-top: 1rem;
 }
 
-.logo-text {
+.logoText {
   width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(3px 3px 5px rgba(0 0 0 / 30%));
 }
 
-.logo > img {
-  display: block;
+.dad1,
+.dad2 {
   position: absolute;
+  height: 90%;
+  object-fit: contain;
+  top: -8%;
 }
 
 .dad1 {
-  top: 3%;
   left: 15%;
 }
 
 .dad2 {
-  top: 3%;
   left: 45%;
 }
 
 .dad3 {
-  top: 60%;
+  position: absolute;
+  width: 90%;
+  object-fit: contain;
+  bottom: 0;
 }
 
 .historyBtn {
@@ -54,7 +62,6 @@
 
 @media screen and (max-width: 600px) {
   .logo {
-    transform: scale(0.75);
-    margin-top: -20px;
+    margin-top: 2rem;
   }
 }

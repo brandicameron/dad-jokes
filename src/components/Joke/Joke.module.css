@@ -12,3 +12,9 @@
   line-height: 1.35;
   font-size: 1.75rem;
 }
+
+@media screen and (max-width: 350px) {
+  .jokeContainer h1 {
+    font-size: 1.25rem;
+  }
+}
