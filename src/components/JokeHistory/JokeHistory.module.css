@@ -14,7 +14,7 @@
   overflow: scroll;
   opacity: 0.99;
   transform: translateX(100%);
-  transition: transform 300ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
 .jokeHistory.open {
