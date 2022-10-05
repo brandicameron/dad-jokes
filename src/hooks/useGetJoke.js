@@ -9,17 +9,25 @@ export function useGetJoke() {
   );
 
   const getJoke = async () => {
-    const response = await fetch('https://icanhazdadjoke.com/', {
-      method: 'GET',
-      headers: {
-        Accept: 'application/json',
-      },
-    });
-    const data = await response.json();
+    try {
+      const response = await fetch('https://icanhazdadjoke.com/', {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+        },
+      });
 
-    setJoke(data.joke);
-    let newData = { id: uuidv4(), joke: data.joke };
-    setJokeHistory((prev) => [...prev, newData]);
+      if (!response.ok) {
+        throw new Error('Something went wrong.');
+      }
+
+      const data = await response.json();
+      setJoke(data.joke);
+      let newData = { id: uuidv4(), joke: data.joke };
+      setJokeHistory((prev) => [...prev, newData]);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
