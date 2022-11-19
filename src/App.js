@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className='app'>
-      <Header handleShowHistory={handleShowHistory} />
+      <Header handleShowHistory={handleShowHistory} joke={joke} />
       <Joke joke={joke} />
       <Footer getJoke={getJoke} />
       <JokeHistory

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 
 :root {
-  --textColor: #000;
+  --primaryColor: #00a3da;
   --accentColor: #754799;
+  --textColor: #000;
   --borderRadius: 50px;
   --radialGradient: radial-gradient(
     206.18% 206.18% at 84.95% 7.59%,
@@ -28,10 +29,24 @@ body {
 }
 
 body {
+  position: fixed;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primaryColor);
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  z-index: 999;
+  z-index: -1;
+  inset: 0;
+  border: 6px solid var(--primaryColor);
+  background-color: white;
+  border-radius: 1rem;
+  pointer-events: none;
 }
 
 a,
@@ -81,6 +96,7 @@ li {
 .app {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   height: 100vh;
   max-height: -webkit-fill-available;
 }

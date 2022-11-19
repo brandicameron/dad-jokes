@@ -3,12 +3,19 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  width: 80vw;
-  max-width: 625px;
+  max-width: 650px;
   margin: auto;
+  padding: 0 8vw;
 }
 
 .jokeContainer h1 {
   line-height: 1.35;
-  font-size: clamp(1.25rem, 6vw, 1.75rem);
+  font-size: clamp(1rem, 6vw, 1.75rem);
+  width: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+  .jokeContainer {
+    min-height: 125px;
+  }
 }

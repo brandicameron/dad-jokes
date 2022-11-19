@@ -22,7 +22,16 @@ export function useGetJoke() {
       }
 
       const data = await response.json();
-      setJoke(data.joke);
+
+      // Prevents a joke that's really long, which overflows the page on mobile (I don't want the "More" button falling below the fold)
+      if (data.joke.length > 80) {
+        getJoke();
+      }
+
+      if (data.joke.length <= 80) {
+        setJoke(data.joke);
+      }
+
       let newData = { id: uuidv4(), joke: data.joke };
       setJokeHistory((prev) => [...prev, newData]);
     } catch (err) {

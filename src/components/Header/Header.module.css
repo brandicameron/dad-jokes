@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
 }
 
 .logo {
@@ -44,10 +44,20 @@
   }
 }
 
-.dad1,
-.dad2,
-.dad3 {
+.laughing {
   animation: rotate 400ms ease-in-out 2;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .dad1,
@@ -71,26 +81,14 @@
   position: absolute;
   width: 80%;
   object-fit: contain;
-  bottom: 0;
+  bottom: -15px;
   animation-delay: 100ms;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
 .historyBtn {
-  position: absolute;
-  width: 30px;
-  height: 30px;
+  position: fixed;
+  width: 35px;
+  height: 35px;
   top: 1rem;
   right: 1rem;
   transition: transform ease-in-out 200ms;
@@ -98,13 +96,4 @@
 
 .historyBtn:hover {
   transform: rotate(-25deg);
-}
-
-@media screen and (max-width: 600px) {
-  .dad3 {
-    position: absolute;
-    width: 80%;
-    object-fit: contain;
-    bottom: -5%;
-  }
 }
