@@ -1,6 +1,6 @@
 # Dad Jokes
 
-VIEW LIVE: [https://brandicameron.github.io/dad-jokes/](hhttps://brandicameron.github.io/dad-jokes/)
+VIEW LIVE: [https://brandicameron.github.io/dad-jokes/](https://brandicameron.github.io/dad-jokes/)
 
 ![App Screenshot](/public/share.jpg)
 
