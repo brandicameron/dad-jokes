@@ -1,20 +1,19 @@
 .jokeHistory {
   position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--accentColor);
   color: white;
   border-radius: var(--borderRadius) 0 0 var(--borderRadius);
-  padding: 2rem;
+  padding: 2rem 2rem 7rem 2rem;
   width: 90vw;
   max-width: 800px;
   height: 100vh;
-  top: 0;
-  right: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  opacity: 0.99;
   transform: translateX(100vw);
   transition: transform 150ms ease-in-out;
 }
@@ -24,13 +23,9 @@
 }
 
 .closeBtn {
-  position: sticky;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
   align-self: flex-end;
-  margin-top: -15px;
-  margin-right: -10px;
   background-color: white;
   color: var(--accentColor);
   font-size: 2rem;
@@ -41,6 +36,11 @@
 
 .jokeHistory h2 {
   font-size: clamp(2rem, 5vw, 2.5rem);
+  line-height: 1.1;
+}
+
+.jokeHistory ul {
+  padding-left: 1rem;
 }
 
 .jokeHistory li {
@@ -50,4 +50,18 @@
 
 .jokeHistory li:last-child {
   border-bottom: none;
+}
+
+.clearBtn {
+  background-color: white;
+  color: var(--accentColor);
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  border-radius: var(--borderRadius);
+  margin-top: 2rem;
+  transition: 150ms linear;
+}
+
+.clearBtn:hover {
+  filter: drop-shadow(2px 3px 0px rgba(0 0 0 / 30%));
 }

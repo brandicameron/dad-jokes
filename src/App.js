@@ -9,7 +9,7 @@ import { useGetJoke } from './hooks/useGetJoke';
 
 function App() {
   const [showHistory, setShowHistory] = useState(false);
-  const { joke, jokeHistory, getJoke } = useGetJoke();
+  const { joke, jokeHistory, getJoke, handleClearHistory } = useGetJoke();
 
   const handleShowHistory = () => {
     setShowHistory((prev) => !prev);
@@ -24,6 +24,7 @@ function App() {
         jokeHistory={jokeHistory}
         showHistory={showHistory}
         handleShowHistory={handleShowHistory}
+        handleClearHistory={handleClearHistory}
       />
     </div>
   );

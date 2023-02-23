@@ -46,5 +46,10 @@ export function useGetJoke() {
     localStorage.setItem('jokeHistory', JSON.stringify(jokeHistory));
   }, [jokeHistory]);
 
-  return { joke, jokeHistory, getJoke };
+  const handleClearHistory = () => {
+    localStorage.clear();
+    setJokeHistory([]);
+  };
+
+  return { joke, jokeHistory, getJoke, handleClearHistory };
 }

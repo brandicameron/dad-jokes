@@ -1,9 +1,3 @@
-.header {
-  display: flex;
-  justify-content: center;
-  padding-top: 2.5rem;
-}
-
 .logo {
   position: relative;
   display: flex;
@@ -89,8 +83,8 @@
   position: fixed;
   width: 35px;
   height: 35px;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: 2rem;
   transition: transform ease-in-out 200ms;
 }
 
